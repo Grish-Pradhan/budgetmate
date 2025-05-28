@@ -29,3 +29,5 @@ class User {
   }
   
   module.exports = User;
+
+  // test
