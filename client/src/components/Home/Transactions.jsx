@@ -63,7 +63,7 @@ export default function Transactions() {
 											tr.cost
 												? `-${Number(tr.cost)}`
 												: `+${Number(tr.amount)}`
-										} DH`}
+										} NRP`}
 										isCost={tr.cost ? 1 : 2}
 									/>
 									<Badge

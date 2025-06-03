@@ -29,12 +29,12 @@ export default function Table({ rows }) {
 							</th>
 							{tr.cost && (
 								<td className={TD + " text-red-main"}>
-									-{Number(tr.cost)} DH
+									-{Number(tr.cost)} NRP
 								</td>
 							)}
 							{tr.amount && (
 								<td className={TD + " text-green-600"}>
-									+{Number(tr.amount)} DH
+									+{Number(tr.amount)} NRP
 								</td>
 							)}
 							<td className={TD}>{tr.category}</td>
