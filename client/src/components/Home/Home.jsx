@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
+  
 
   useEffect(() => {
     if (darkMode) {
@@ -23,14 +24,6 @@ const Home = () => {
         <nav className="flex gap-4 items-center">
           <Link to="/login" className="font-semibold">Login</Link>
           <Link to="/register" className="font-semibold">Register</Link>
-          {/* Dark mode toggle button */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="ml-2 p-2 rounded border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white transition"
-            aria-label="Toggle Dark Mode"
-          >
-            {darkMode ? '🌙' : '☀️'}
-          </button>
         </nav>
       </header>
 

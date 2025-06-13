@@ -1,5 +1,3 @@
-/*logo and title of the app on the left side*/
-
 import React from "react";
 import logo from "../../assets/logo1.png";
 
@@ -10,7 +8,7 @@ export default function Logo({ isOpen }) {
 				isOpen ? "mb-20" : "mb-10"
 			}`}
 		>
-			<img src={logo} alt="logo" className="w-10" />
+			<img src={Logo} alt="logo" className="w-10" />
 
 			<h1
 				className={`font-extrabold origin-left duration-100
